@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="sanmianti.com.ztools.ImmersiveActivity"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/dim_system_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="弱化导航栏及状态栏" />
+
+        <Button
+            android:id="@+id/behind_status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="显示状态栏的全屏" />
+
+        <Button
+            android:id="@+id/hide_status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="隐藏状态栏" />
+
+        <Button
+            android:id="@+id/hide_navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="隐藏底部导航栏" />
+
+        <Button
+            android:id="@+id/behind_navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="应用位于导航栏底部" />
+
+        <Button
+            android:id="@+id/lean_back_fullscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="触屏可恢复式全屏" />
+
+        <Button
+            android:id="@+id/sticky_fullscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="触屏不可恢复式全屏" />
+
+        <Button
+            android:id="@+id/revel_system_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="恢复默认" />
+
+        <Button
+            android:id="@+id/google_immersive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Google Demo1" />
+
+        <Button
+            android:id="@+id/google_sticky_immersive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Google Demo2" />
+    </LinearLayout>
+
+
+</layout>
