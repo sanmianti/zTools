@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:tools="http://schemas.android.com/tools"
-          package="sanmianti.com.ztools"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="sanmianti.com.ztools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -17,25 +17,25 @@
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".OpenThirdAppActivity"
-            android:label="打开第三方应用"/>
+            android:label="打开第三方应用" />
         <activity
             android:name=".ImmersiveActivity"
-            android:theme="@style/StatusBarTestTheme"/>
+            android:theme="@style/StatusBarTestTheme" />
         <activity
             android:name=".GoogleImmersiveActivity"
-            android:theme="@style/ImmersiveTheme"/>
+            android:theme="@style/ImmersiveTheme" />
         <activity
             android:name=".GoogleImmersiveStickyActivity"
-            android:theme="@style/ImmersiveStickyTheme"/>
-        <activity android:name=".ProgressWebviewActivity"/>
-
+            android:theme="@style/ImmersiveStickyTheme" />
+        <activity android:name=".ProgressWebviewActivity" />
+        <activity android:name=".keyboard.SoftkeyboardTestActivity"/>
     </application>
 
 </manifest>

@@ -21,6 +21,8 @@ import android.view.View;
 import com.sanmianti.qrcode.activity.CaptureActivity;
 import com.sanmianti.qrcode.utils.CodeUtils;
 
+import sanmianti.com.ztools.keyboard.SoftkeyboardTestActivity;
+
 public class MainActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
@@ -116,6 +118,7 @@ public class MainActivity extends BaseActivity
         findViewById(R.id.progress_webview).setOnClickListener(this);
         findViewById(R.id.qr_code).setOnClickListener(this);
         findViewById(R.id.date_picker).setOnClickListener(this);
+        findViewById(R.id.softkeyboard).setOnClickListener(this);
     }
 
     @Override
@@ -146,6 +149,9 @@ public class MainActivity extends BaseActivity
                        showToast(year + "-" + month + "-" + day);
                 });
                 pickerDialog.show(this);
+                break;
+            case R.id.softkeyboard:
+                startActivity(new Intent(MainActivity.this, SoftkeyboardTestActivity.class));
                 break;
             default:
                 break;
