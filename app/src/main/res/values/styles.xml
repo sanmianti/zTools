@@ -3,9 +3,13 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!--控制状态栏颜色-->
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <!--控制导航栏背景色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--控制主页面背景色-->
+        <item name="android:windowBackground">@color/white</item>
     </style>
 
     <style name="StatusBarTestTheme" parent="Theme.AppCompat">
@@ -15,8 +19,6 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <!--控制主页面背景色-->
         <item name="android:windowBackground">@color/white</item>
-        <!--设置状态栏为亮色主题，当状态栏为白色时状态栏字体为灰黑色 targetAPI：23-->
-        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
     </style>
 
     <style name="ImmersiveTheme" parent="android:Theme.Holo">

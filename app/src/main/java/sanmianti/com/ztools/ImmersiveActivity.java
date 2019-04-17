@@ -38,9 +38,6 @@ public class ImmersiveActivity extends BaseActivity {
     }
 
     private void initView() {
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("沉浸式用户体验");
-        }
         binding.dimSystemBar.setOnClickListener(v -> dimSystemBars());
         binding.revelSystemBar.setOnClickListener(v -> revelSystemBars());
         binding.hideStatusBar.setOnClickListener(v -> hideStatusBar());

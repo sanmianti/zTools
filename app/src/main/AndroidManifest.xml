@@ -24,9 +24,11 @@
         </activity>
         <activity
             android:name=".OpenThirdAppActivity"
-            android:label="打开第三方应用" />
+            android:label="打开第三方应用"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".ImmersiveActivity"
+            android:label="沉浸式用户体验"
             android:theme="@style/StatusBarTestTheme" />
         <activity
             android:name=".GoogleImmersiveActivity"
@@ -34,8 +36,14 @@
         <activity
             android:name=".GoogleImmersiveStickyActivity"
             android:theme="@style/ImmersiveStickyTheme" />
-        <activity android:name=".ProgressWebviewActivity" />
-        <activity android:name=".keyboard.SoftkeyboardTestActivity"/>
+        <activity
+            android:name=".ProgressWebviewActivity"
+            android:label="loading..."
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".keyboard.SoftkeyboardTestActivity"
+            android:label="软键盘相关功能测试"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

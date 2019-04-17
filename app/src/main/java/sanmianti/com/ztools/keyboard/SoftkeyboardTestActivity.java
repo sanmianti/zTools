@@ -29,11 +29,6 @@ public class SoftkeyboardTestActivity extends BaseActivity implements View.OnCli
      * 初始化界面
      */
     private void initView() {
-
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("软键盘相关功能测试");
-        }
-
         binding.hideSoftkeyboard.setOnClickListener(this);
         binding.popupSoftkeyboard.setOnClickListener(this);
 
