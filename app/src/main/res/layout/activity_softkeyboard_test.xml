@@ -8,7 +8,7 @@
         android:layout_height="match_parent"
         tools:context=".keyboard.SoftkeyboardTestActivity">
 
-        <EditText
+        <sanmianti.com.ztools.cusview.EditTextWithClear
             android:id="@+id/input_option_go"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
