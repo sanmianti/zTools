@@ -22,6 +22,7 @@ import com.sanmianti.qrcode.activity.CaptureActivity;
 import com.sanmianti.qrcode.utils.CodeUtils;
 
 import sanmianti.com.ztools.keyboard.SoftkeyboardTestActivity;
+import sanmianti.com.ztools.swiprefresh.SwipRefreshActivity;
 
 public class MainActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
@@ -119,6 +120,7 @@ public class MainActivity extends BaseActivity
         findViewById(R.id.qr_code).setOnClickListener(this);
         findViewById(R.id.date_picker).setOnClickListener(this);
         findViewById(R.id.softkeyboard).setOnClickListener(this);
+        findViewById(R.id.pulldownRefresh).setOnClickListener(this);
     }
 
     @Override
@@ -153,6 +155,8 @@ public class MainActivity extends BaseActivity
             case R.id.softkeyboard:
                 startActivity(new Intent(MainActivity.this, SoftkeyboardTestActivity.class));
                 break;
+            case R.id.pulldownRefresh:
+                startActivity(new Intent(MainActivity.this, SwipRefreshActivity.class));
             default:
                 break;
         }

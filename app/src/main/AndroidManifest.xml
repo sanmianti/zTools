@@ -44,6 +44,9 @@
             android:name=".keyboard.SoftkeyboardTestActivity"
             android:label="软键盘相关功能测试"
             android:theme="@style/AppTheme" />
+        <activity android:name=".swiprefresh.SwipRefreshActivity"
+            android:label="下拉刷新控件的使用"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

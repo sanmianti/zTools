@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".swiprefresh.SwipRefreshActivity">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swip_refresh_pull"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/swip_refresh_change_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/swip_refresh_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        <Button
+            android:id="@+id/swip_refresh_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐藏刷新"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/swip_refresh_open"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="@+id/swip_refresh_pull" />
+
+
+        <Button
+            android:id="@+id/swip_refresh_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示刷新"
+            app:layout_constraintBottom_toBottomOf="@+id/swip_refresh_stop"
+            app:layout_constraintEnd_toStartOf="@id/swip_refresh_disable"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/swip_refresh_stop"
+            app:layout_constraintTop_toTopOf="@+id/swip_refresh_stop" />
+
+        <Button
+            android:id="@+id/swip_refresh_disable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停用刷新"
+            app:layout_constraintBottom_toBottomOf="@+id/swip_refresh_open"
+            app:layout_constraintEnd_toStartOf="@id/swip_refresh_enable"
+            app:layout_constraintStart_toEndOf="@+id/swip_refresh_open"
+            app:layout_constraintTop_toTopOf="@+id/swip_refresh_open" />
+
+        <Button
+            android:id="@+id/swip_refresh_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="启用刷新"
+            app:layout_constraintBottom_toBottomOf="@+id/swip_refresh_disable"
+            app:layout_constraintEnd_toEndOf="@+id/swip_refresh_pull"
+            app:layout_constraintRight_toLeftOf="@+id/swip_refresh_change_color"
+            app:layout_constraintStart_toEndOf="@+id/swip_refresh_disable"
+            app:layout_constraintTop_toTopOf="@+id/swip_refresh_disable" />
+
+        <Button
+            android:id="@+id/swip_refresh_change_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="修改颜色"
+            app:layout_constraintBottom_toTopOf="@+id/swip_refresh_stop"
+            app:layout_constraintStart_toStartOf="@+id/swip_refresh_pull" />
+    </android.support.constraint.ConstraintLayout>
+
+</layout>
