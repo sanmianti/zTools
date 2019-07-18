@@ -1,1 +1,1 @@
-include ':app',':QRCodeScan'
+include ':app',':QRCodeScan', ':BaseLibrary'
