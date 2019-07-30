@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 
-import sanmianti.com.ztools.BaseActivity;
+import sanmianti.com.baselibrary.baseactivity.BaseActivity;
 import sanmianti.com.ztools.R;
 import sanmianti.com.ztools.databinding.ActivitySoftkeyboardTestBinding;
 

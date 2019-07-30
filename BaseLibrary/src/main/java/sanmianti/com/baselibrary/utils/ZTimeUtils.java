@@ -8,7 +8,7 @@ import java.util.Date;
  * @description 时间工具类
  * @date 2019/7/18 10:15
  */
-public class TimeUtils {
+public class ZTimeUtils {
 
 
     /**

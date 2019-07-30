@@ -15,6 +15,7 @@ import android.webkit.WebViewClient;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
+import sanmianti.com.baselibrary.baseactivity.BaseActivity;
 import sanmianti.com.ztools.databinding.ActivityProgressWebviewBinding;
 
 /**

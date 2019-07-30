@@ -5,6 +5,7 @@ import android.content.pm.PackageManager;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 
+import sanmianti.com.baselibrary.baseactivity.BaseActivity;
 import sanmianti.com.ztools.databinding.ActivityOpenThirdAppBinding;
 
 /**

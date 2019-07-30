@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.view.View;
 
+import sanmianti.com.baselibrary.baseactivity.BaseActivity;
 import sanmianti.com.ztools.databinding.ActivityImmersiveBinding;
 
 import static android.view.View.SYSTEM_UI_FLAG_FULLSCREEN;

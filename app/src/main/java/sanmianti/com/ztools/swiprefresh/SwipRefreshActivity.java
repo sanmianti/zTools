@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import sanmianti.com.ztools.BaseActivity;
+import sanmianti.com.baselibrary.baseactivity.BaseActivity;
 import sanmianti.com.ztools.R;
 import sanmianti.com.ztools.databinding.ActivitySwipRefreshBinding;
 

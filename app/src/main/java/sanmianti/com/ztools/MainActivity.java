@@ -21,7 +21,9 @@ import android.view.View;
 import com.sanmianti.qrcode.activity.CaptureActivity;
 import com.sanmianti.qrcode.utils.CodeUtils;
 
+import sanmianti.com.baselibrary.baseactivity.BaseActivity;
 import sanmianti.com.ztools.keyboard.SoftkeyboardTestActivity;
+import sanmianti.com.ztools.swiprefresh.PermissionTestActivity;
 import sanmianti.com.ztools.swiprefresh.SwipRefreshActivity;
 
 public class MainActivity extends BaseActivity
@@ -121,6 +123,7 @@ public class MainActivity extends BaseActivity
         findViewById(R.id.date_picker).setOnClickListener(this);
         findViewById(R.id.softkeyboard).setOnClickListener(this);
         findViewById(R.id.pulldownRefresh).setOnClickListener(this);
+        findViewById(R.id.request_permission).setOnClickListener(this);
     }
 
     @Override
@@ -157,6 +160,10 @@ public class MainActivity extends BaseActivity
                 break;
             case R.id.pulldownRefresh:
                 startActivity(new Intent(MainActivity.this, SwipRefreshActivity.class));
+                break;
+            case R.id.request_permission:
+                startActivity(new Intent(MainActivity.this, PermissionTestActivity.class));
+                break;
             default:
                 break;
         }
