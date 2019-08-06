@@ -37,4 +37,5 @@ dependencies {
     implementation project(':QRCodeScan')
     implementation 'com.android.support:design:28.0.0'
     implementation project(path: ':BaseLibrary')
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
 }

@@ -2,8 +2,10 @@ package sanmianti.com.ztools;
 
 import android.app.Activity;
 import android.app.Application;
+import android.arch.lifecycle.ProcessLifecycleOwner;
 
 import sanmianti.com.baselibrary.baseactivity.ZMainProxy;
+import sanmianti.com.baselibrary.utils.ZProcessLifecycleObserver;
 
 /**
  * @author sanmianti
@@ -28,6 +30,6 @@ public class ZToolsApplication  extends Application {
                 ZToolsApplication.this.currentActivity = activity;
             }
         });
-
+        ProcessLifecycleOwner.get().getLifecycle().addObserver(new ZProcessLifecycleObserver());
     }
 }
